@@ -1,0 +1,14 @@
+main > div {
+  background-color: #fff;
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+}
+
+.content {
+  padding: .5em .5em;
+}
+
+.content__main {
+  padding: 1em .2em;
+}
+/*# sourceMappingURL=Main.css.map */

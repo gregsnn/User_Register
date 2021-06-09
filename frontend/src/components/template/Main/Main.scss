@@ -1,0 +1,12 @@
+main > div {
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.content {
+    padding: .5em .5em;
+
+    &__main {
+        padding: 1em .2em;
+    }
+}

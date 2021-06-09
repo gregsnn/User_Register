@@ -1,0 +1,41 @@
+aside.menu-area {
+  background-color: var(--bg-dark);
+  -webkit-box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.12), 2px 0 15px 0 rgba(0, 0, 0, 0.09);
+          box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.12), 2px 0 15px 0 rgba(0, 0, 0, 0.09);
+}
+
+aside.menu-area .menu a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+  padding: 1em;
+}
+
+aside.menu-area a:hover {
+  background: linear-gradient(135deg, #07a7e3 0%, #32dac3 100%);
+  color: rgba(6, 5, 4, 0.9);
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .menu a {
+    display: inline;
+    padding: .1em;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=Nav.css.map */

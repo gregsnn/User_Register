@@ -1,0 +1,23 @@
+Footer.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0 2em;
+  background-color: #fff;
+  color: var(--lightly);
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+}
+
+Footer.footer .icon,
+Footer.footer .meaning {
+  text-decoration: none;
+  color: #000;
+}
+/*# sourceMappingURL=Footer.css.map */

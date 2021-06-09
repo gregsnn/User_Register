@@ -1,0 +1,249 @@
+// @extends
+.btn-standard {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    
+    margin-top: 2em;
+}
+// end @extends
+
+
+// ui
+
+// form
+.form {
+    padding: 1em 2em;
+
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    // form__col
+    &__col {
+        padding: 0.5em 0;
+
+        // button column
+        &__btn {
+            @extend .btn-standard;
+
+            .btn {
+                padding: .8em;
+
+                border: none;
+                border-radius: 5px;
+
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+                
+            .btn__save {
+                background-color: rgba(0, 153, 204, 1);
+                color: #fff;
+                transform: scale(1);
+                transition: all ease .3s;
+
+                &:hover {
+                    background-color:  rgba(10, 153, 199, .8);
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+            }
+
+            .btn__cancel {
+                background-color: rgba(45, 47, 50, 1);
+                color: #fff;
+                transform: scale(1);
+                transition: all ease .3s;
+
+                &:hover {
+                    background-color:  rgba(45, 40, 50, .9);
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+            }
+        }
+        // end button column
+    }
+    // end form__col
+
+
+    // label / input
+    label {
+        display: flex;
+        padding-bottom: .4em;
+
+        font-weight: bolder;
+    }
+    
+    &__group__control {
+        width: 80%;
+
+        margin-left: 1.2em;
+        padding: .8em;
+
+        border: 0.1px thin grey ;
+    }
+    // end label / input
+
+
+    // media form
+    @media (max-width: 956px) {
+        .form__row {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+
+            justify-content: space-around;
+
+            margin: 0;
+        }
+
+        .form__col {
+            width: 50%;
+        }
+
+        .form__group__control {
+            margin: 0;
+        }
+    }
+    // end media form
+}
+// end form
+
+
+// table
+table {
+    width: 100%;
+    padding: 0 2em;
+
+    text-align: justify;
+
+    td {
+        padding: 1em 0;
+        border-bottom: 1px double grey;
+    }
+
+    th {
+        border: 1px groove rgba(45, 47, 50, 1);
+        padding: .8em;
+    }
+
+    // sizing table
+    .colspan-1 {
+        width: 2%;
+        padding: .3em;
+        border-right: none;
+    }
+    .colspan-2 {
+        width: 40%;
+        text-align: start;
+        padding-left: .5em;
+        border-right: none;
+        border-left: none;
+    }
+    .colspan-3 {
+        width: 6%;
+        text-align: center;
+        border-left: none;
+    }
+    .colspan-id {
+        width: 2%;
+        text-align: center;
+    }
+    .colspan-text {
+        text-align: start;
+        padding-left: .5em;
+    }
+    .colspan-btn {
+        text-align: center;
+    }
+    // end sizing table
+
+
+    .btn__table {
+        @extend .btn-standard;
+        
+        display: block;
+        text-align: center;
+    
+        margin: 0;
+
+        border: none;
+    
+        &__edit {
+            background-color: rgb(235, 112, 35);
+            padding: .6em .5em;
+            border: none;
+            border-radius: 3px;
+            transform: scale(1);
+            transition: all ease .3s;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+                background-color: rgb(233, 98, 14);
+            }
+        }
+    
+        &__delete {
+            background-color: rgba(240, 60, 60, 1);
+            margin-left: .5em;
+            padding: .6em .6em;
+            border: none;
+            border-radius: 3px;
+            transform: scale(1);
+            transition: all ease .2s;
+
+            &:hover {
+                background-color: rgb(237, 32, 32);
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+// end table
+
+.hr {
+    border: 1px thin grey;
+    border-radius: 100%;
+    width: 60%;
+    margin: 3em auto;
+}
+
+
+@media (max-width: 992px) {
+    table {
+
+        .colspan-text {
+            font-size: .9rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        table {
+            
+            .colspan-text {
+                font-size: .85rem;
+            }
+        }
+    
+        @media (max-width: 576px) {
+            .form {
+                overflow: hidden;
+            }
+        
+            table {
+        
+                .colspan-text {
+                    font-size: .68rem;
+                }
+            }
+        }
+    }
+}
+// end ui

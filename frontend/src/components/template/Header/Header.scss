@@ -1,0 +1,33 @@
+Header.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #fff;
+    box-shadow: var(--shadow);
+
+    padding: 0 1em;
+    overflow: hidden;
+    white-space: nowrap;
+
+    h1 {
+        font-size: 1.8rem;
+        margin-top: .5em;
+
+        .icon {
+            margin-right: .4em;
+        }
+    }
+
+    p {
+        color: #6d6d6d;
+        margin-top: 0;
+        padding: .8em 0;
+    }
+}
+
+@media (max-width: 576px) {
+    Header.header {
+        display: none;
+    }
+}

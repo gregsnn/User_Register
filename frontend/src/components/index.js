@@ -1,0 +1,7 @@
+export { UserCrud } from './user/UserCrud.component'
+export { Header } from './template/Header/Header.component'
+export { Home } from './home/Home.component'
+export { Logo } from './template/Logo/Logo.component'
+export { Main } from './template/Main/Main.component'
+export { Nav } from './template/Nav/Nav.component'
+export { Footer } from './template/Footer/Footer.component'
